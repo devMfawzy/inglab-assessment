@@ -1,0 +1,45 @@
+//
+//  UIColor+Custom.swift
+//  InglabAssessment
+//
+//  Created by Mohamed Fawzy on 09/10/2022.
+//
+
+import UIKit
+
+extension UIColor {
+    convenience init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+    }
+
+    convenience init(rgb: Int) {
+        self.init(
+            red: (rgb >> 16) & 0xFF,
+            green: (rgb >> 8) & 0xFF,
+            blue: rgb & 0xFF
+        )
+    }
+}
+
+extension UIColor {
+    static var backgroundColor: UIColor {
+        UIColor(rgb: 0xECECEC)
+    }
+    
+    static var borderColor: UIColor {
+        UIColor(rgb: 0xD0D0D0)
+    }
+    
+    static var darkTextColor: UIColor {
+        UIColor(rgb: 0x6C6C6C)
+    }
+    
+    static var blueButtonColoe: UIColor {
+        UIColor(rgb: 0x3E9CBA)
+    }
+}
+
