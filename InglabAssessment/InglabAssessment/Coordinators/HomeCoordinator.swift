@@ -17,7 +17,7 @@ class HomeCoordinator: Coordinator {
     }
     
     func start() {
-        let rootViewController = UsersListViewController()
+        let rootViewController = PeopleListViewController()
         changeRootViewController(navigationController, window: window)
         navigationController.pushViewController(rootViewController, animated: false)
     }

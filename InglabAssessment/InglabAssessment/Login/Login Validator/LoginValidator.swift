@@ -24,7 +24,11 @@ enum LoginValidationError {
     }
 }
 
-class LoginValidator {
+protocol LoginValidatorProtocl {
+    func validate(username: String, password: String) -> LoginValidationError?
+}
+
+class LoginValidator: LoginValidatorProtocl {
     func validate(username: String, password: String) -> LoginValidationError? {
         var result: LoginValidationError?
         if username.isEmpty {

@@ -87,7 +87,6 @@ class LoginView: UIView {
             make.top.equalTo(label.snp.bottom).offset(20)
             make.leading.equalToSuperview().offset(24)
             make.trailing.equalToSuperview().offset(-24)
-            make.height.equalTo(40)
         }
         
         passwordContainer.snp.makeConstraints { make in

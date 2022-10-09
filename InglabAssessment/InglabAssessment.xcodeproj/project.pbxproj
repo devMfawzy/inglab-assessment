@@ -19,13 +19,22 @@
 		5B07F18628F182DA00BAC948 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F18528F182DA00BAC948 /* UITextField+.swift */; };
 		5B07F18828F1860300BAC948 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F18728F1860300BAC948 /* UIView+Border.swift */; };
 		5B07F18E28F1A04E00BAC948 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F18D28F1A04E00BAC948 /* LoginViewModel.swift */; };
-		5B07F19528F1A41A00BAC948 /* LoginServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F19428F1A41A00BAC948 /* LoginServiceProtocol.swift */; };
+		5B07F19528F1A41A00BAC948 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F19428F1A41A00BAC948 /* LoginService.swift */; };
 		5B07F19828F1AEAF00BAC948 /* LoginValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F19728F1AEAF00BAC948 /* LoginValidator.swift */; };
 		5B07F19B28F1E04400BAC948 /* KeyboardAvoidingView in Frameworks */ = {isa = PBXBuildFile; productRef = 5B07F19A28F1E04400BAC948 /* KeyboardAvoidingView */; };
 		5B07F19E28F202AC00BAC948 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F19D28F202AC00BAC948 /* HomeCoordinator.swift */; };
 		5B07F1A128F20FBA00BAC948 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1A028F20FBA00BAC948 /* User.swift */; };
 		5B07F1A328F214C600BAC948 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1A228F214C600BAC948 /* LoginCoordinator.swift */; };
-		5B07F1A528F244BC00BAC948 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1A428F244BC00BAC948 /* UsersListViewController.swift */; };
+		5B07F1A528F244BC00BAC948 /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1A428F244BC00BAC948 /* PeopleListViewController.swift */; };
+		5B07F1A728F2505100BAC948 /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1A628F2505100BAC948 /* PeopleListView.swift */; };
+		5B07F1A928F25A5E00BAC948 /* UISearchBar+backgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1A828F25A5E00BAC948 /* UISearchBar+backgroundColor.swift */; };
+		5B07F1AC28F2628800BAC948 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1AB28F2628800BAC948 /* PersonTableViewCell.swift */; };
+		5B07F1B228F2EAE600BAC948 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1B128F2EAE600BAC948 /* Person.swift */; };
+		5B07F1B428F2EBD600BAC948 /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1B328F2EBD600BAC948 /* PeopleService.swift */; };
+		5B07F1B628F2ED4700BAC948 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1B528F2ED4700BAC948 /* API.swift */; };
+		5B07F1B928F2F41100BAC948 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1B828F2F41100BAC948 /* PeopleViewModel.swift */; };
+		5B07F1BC28F33D3600BAC948 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5B07F1BB28F33D3600BAC948 /* Kingfisher */; };
+		5B07F1BF28F3771200BAC948 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1BE28F3771100BAC948 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,12 +52,20 @@
 		5B07F18528F182DA00BAC948 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		5B07F18728F1860300BAC948 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		5B07F18D28F1A04E00BAC948 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		5B07F19428F1A41A00BAC948 /* LoginServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceProtocol.swift; sourceTree = "<group>"; };
+		5B07F19428F1A41A00BAC948 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		5B07F19728F1AEAF00BAC948 /* LoginValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidator.swift; sourceTree = "<group>"; };
 		5B07F19D28F202AC00BAC948 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		5B07F1A028F20FBA00BAC948 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5B07F1A228F214C600BAC948 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
-		5B07F1A428F244BC00BAC948 /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		5B07F1A428F244BC00BAC948 /* PeopleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
+		5B07F1A628F2505100BAC948 /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
+		5B07F1A828F25A5E00BAC948 /* UISearchBar+backgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+backgroundColor.swift"; sourceTree = "<group>"; };
+		5B07F1AB28F2628800BAC948 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		5B07F1B128F2EAE600BAC948 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		5B07F1B328F2EBD600BAC948 /* PeopleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleService.swift; sourceTree = "<group>"; };
+		5B07F1B528F2ED4700BAC948 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		5B07F1B828F2F41100BAC948 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
+		5B07F1BE28F3771100BAC948 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B07F1BC28F33D3600BAC948 /* Kingfisher in Frameworks */,
 				5B07F18128F0B57600BAC948 /* SnapKit in Frameworks */,
 				5B07F19B28F1E04400BAC948 /* KeyboardAvoidingView in Frameworks */,
 			);
@@ -87,7 +105,7 @@
 				5B07F18228F1757300BAC948 /* Extensions */,
 				5B07F16C28F0901B00BAC948 /* Coordinators */,
 				5B07F18A28F19FB100BAC948 /* Login */,
-				5B07F19C28F1F75700BAC948 /* Users List */,
+				5B07F19C28F1F75700BAC948 /* People List */,
 				5B07F15628F0895E00BAC948 /* AppDelegate.swift */,
 				5B07F15F28F0896100BAC948 /* Assets.xcassets */,
 				5B07F16128F0896100BAC948 /* LaunchScreen.storyboard */,
@@ -129,6 +147,7 @@
 				5B07F18328F1765A00BAC948 /* UIColor+Custom.swift */,
 				5B07F18528F182DA00BAC948 /* UITextField+.swift */,
 				5B07F18728F1860300BAC948 /* UIView+Border.swift */,
+				5B07F1A828F25A5E00BAC948 /* UISearchBar+backgroundColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -165,7 +184,7 @@
 		5B07F19328F1A3E100BAC948 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				5B07F19428F1A41A00BAC948 /* LoginServiceProtocol.swift */,
+				5B07F19428F1A41A00BAC948 /* LoginService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -178,12 +197,16 @@
 			path = "Login Validator";
 			sourceTree = "<group>";
 		};
-		5B07F19C28F1F75700BAC948 /* Users List */ = {
+		5B07F19C28F1F75700BAC948 /* People List */ = {
 			isa = PBXGroup;
 			children = (
-				5B07F1A428F244BC00BAC948 /* UsersListViewController.swift */,
+				5B07F1B728F2F3E500BAC948 /* View Model */,
+				5B07F1B028F2EAC600BAC948 /* Models */,
+				5B07F1AF28F2EA8B00BAC948 /* Services */,
+				5B07F1BD28F350AB00BAC948 /* View Controlle */,
+				5B07F1AA28F2612B00BAC948 /* Views */,
 			);
-			path = "Users List";
+			path = "People List";
 			sourceTree = "<group>";
 		};
 		5B07F19F28F20F9200BAC948 /* User */ = {
@@ -192,6 +215,49 @@
 				5B07F1A028F20FBA00BAC948 /* User.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		5B07F1AA28F2612B00BAC948 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B07F1A628F2505100BAC948 /* PeopleListView.swift */,
+				5B07F1AB28F2628800BAC948 /* PersonTableViewCell.swift */,
+				5B07F1BE28F3771100BAC948 /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B07F1AF28F2EA8B00BAC948 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5B07F1B328F2EBD600BAC948 /* PeopleService.swift */,
+				5B07F1B528F2ED4700BAC948 /* API.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5B07F1B028F2EAC600BAC948 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B07F1B128F2EAE600BAC948 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B07F1B728F2F3E500BAC948 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B07F1B828F2F41100BAC948 /* PeopleViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		5B07F1BD28F350AB00BAC948 /* View Controlle */ = {
+			isa = PBXGroup;
+			children = (
+				5B07F1A428F244BC00BAC948 /* PeopleListViewController.swift */,
+			);
+			path = "View Controlle";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +279,7 @@
 			packageProductDependencies = (
 				5B07F18028F0B57600BAC948 /* SnapKit */,
 				5B07F19A28F1E04400BAC948 /* KeyboardAvoidingView */,
+				5B07F1BB28F33D3600BAC948 /* Kingfisher */,
 			);
 			productName = InglabAssessment;
 			productReference = 5B07F15328F0895E00BAC948 /* InglabAssessment.app */;
@@ -245,6 +312,7 @@
 			packageReferences = (
 				5B07F17F28F0B57600BAC948 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				5B07F19928F1E04400BAC948 /* XCRemoteSwiftPackageReference "KeyboardAvoidingView" */,
+				5B07F1BA28F33D3600BAC948 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 5B07F15428F0895E00BAC948 /* Products */;
 			projectDirPath = "";
@@ -272,13 +340,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B07F1B628F2ED4700BAC948 /* API.swift in Sources */,
+				5B07F1AC28F2628800BAC948 /* PersonTableViewCell.swift in Sources */,
 				5B07F1A128F20FBA00BAC948 /* User.swift in Sources */,
 				5B07F18828F1860300BAC948 /* UIView+Border.swift in Sources */,
-				5B07F1A528F244BC00BAC948 /* UsersListViewController.swift in Sources */,
+				5B07F1A528F244BC00BAC948 /* PeopleListViewController.swift in Sources */,
 				5B07F1A328F214C600BAC948 /* LoginCoordinator.swift in Sources */,
 				5B07F15B28F0895E00BAC948 /* LoginViewController.swift in Sources */,
-				5B07F19528F1A41A00BAC948 /* LoginServiceProtocol.swift in Sources */,
+				5B07F19528F1A41A00BAC948 /* LoginService.swift in Sources */,
+				5B07F1BF28F3771200BAC948 /* ErrorView.swift in Sources */,
 				5B07F16E28F0905E00BAC948 /* ApplicationCoordinator.swift in Sources */,
+				5B07F1A928F25A5E00BAC948 /* UISearchBar+backgroundColor.swift in Sources */,
+				5B07F1A728F2505100BAC948 /* PeopleListView.swift in Sources */,
+				5B07F1B928F2F41100BAC948 /* PeopleViewModel.swift in Sources */,
+				5B07F1B228F2EAE600BAC948 /* Person.swift in Sources */,
 				5B07F18628F182DA00BAC948 /* UITextField+.swift in Sources */,
 				5B07F18428F1765A00BAC948 /* UIColor+Custom.swift in Sources */,
 				5B07F19828F1AEAF00BAC948 /* LoginValidator.swift in Sources */,
@@ -287,6 +362,7 @@
 				5B07F19E28F202AC00BAC948 /* HomeCoordinator.swift in Sources */,
 				5B07F16B28F08F4100BAC948 /* Coordinator .swift in Sources */,
 				5B07F18E28F1A04E00BAC948 /* LoginViewModel.swift in Sources */,
+				5B07F1B428F2EBD600BAC948 /* PeopleService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +592,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		5B07F1BA28F33D3600BAC948 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -528,6 +612,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5B07F19928F1E04400BAC948 /* XCRemoteSwiftPackageReference "KeyboardAvoidingView" */;
 			productName = KeyboardAvoidingView;
+		};
+		5B07F1BB28F33D3600BAC948 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B07F1BA28F33D3600BAC948 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

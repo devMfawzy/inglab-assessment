@@ -17,14 +17,14 @@ protocol LoginViewModeling {
 
 class LoginViewModel: LoginViewModeling {
     private var service: LoginServiceProtocol
-    private var loginValidator: LoginValidator
+    private var loginValidator: LoginValidatorProtocl
     
     private var loginSuccessHandler: (() -> Void)?
     private var loginErrorHandler: ((String) -> Void)?
     private var validationErrorHandler: ((LoginValidationError) -> Void)?
     private var loadingHandler: (() -> Void)?
     
-    init(service: LoginServiceProtocol = LoginService(), validator: LoginValidator = LoginValidator()) {
+    init(service: LoginServiceProtocol = LoginService(), validator: LoginValidatorProtocl = LoginValidator()) {
         self.service = service
         self.loginValidator = validator
     }
