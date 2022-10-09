@@ -18,7 +18,15 @@ class HomeCoordinator: Coordinator {
     
     func start() {
         let rootViewController = PeopleListViewController()
+        rootViewController.delegate = self
         changeRootViewController(navigationController, window: window)
         navigationController.pushViewController(rootViewController, animated: false)
+    }
+}
+
+extension HomeCoordinator: PeopleListViewControllerDelegate {
+    func showDetailsOf(person: Person) {
+        let viewController = PersonDetailsViewController(person: person)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

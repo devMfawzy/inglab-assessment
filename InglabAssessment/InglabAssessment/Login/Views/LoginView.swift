@@ -10,7 +10,29 @@ import SnapKit
 import KeyboardAvoidingView
 
 class LoginView: UIView {
-    //Mark: public properties
+    private let imageView = UIImageView()
+    private let label = UILabel()
+    private let usernameTextField = UITextField()
+    private let passwordTextField = UITextField()
+    private lazy var toggleVisibiltyButton = UIButton()
+    private lazy var userNameContainer = usernameTextField.containerView(leftImageName: "iconUser")
+    private lazy var passwordContainer = passwordTextField.containerView(leftImageName: "iconPassword", rightButton: toggleVisibiltyButton)
+    private let loginButton = UIButton(type: .system)
+    private let errorLabel = UILabel()
+    private var onLoginHandler: ((String, String) -> Void)?
+    private lazy var activityIndicatorView = UIActivityIndicatorView(style: .whiteLarge)
+    
+    init(title: String) {
+        super.init(frame: .zero)
+        addSubviews()
+        setUpConstraints()
+        setUpViews(title: title)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     func onLoginDidTab(handler: @escaping (_ userName: String, _ password: String) -> Void) {
         onLoginHandler = handler
     }
@@ -28,31 +50,6 @@ class LoginView: UIView {
     
     func hideLoadingIndicator() {
         activityIndicatorView.stopAnimating()
-    }
-    
-    //MARK: Private properties
-    private let imageView = UIImageView()
-    private let label = UILabel()
-    private let usernameTextField = UITextField()
-    private let passwordTextField = UITextField()
-    private lazy var toggleVisibiltyButton = UIButton()
-    private lazy var userNameContainer = usernameTextField.containerView(leftImageName: "iconUser")
-    private lazy var passwordContainer = passwordTextField.containerView(leftImageName: "iconPassword", rightButton: toggleVisibiltyButton)
-    private let loginButton = UIButton(type: .system)
-    private let errorLabel = UILabel()
-    private var onLoginHandler: ((String, String) -> Void)?
-    private lazy var activityIndicatorView = UIActivityIndicatorView(style: .whiteLarge)
-
-    
-    init(title: String) {
-        super.init(frame: .zero)
-        addSubviews()
-        setUpConstraints()
-        setUpViews(title: title)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     private func addSubviews() {

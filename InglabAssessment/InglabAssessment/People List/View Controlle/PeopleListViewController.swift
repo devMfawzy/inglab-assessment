@@ -8,9 +8,14 @@
 import UIKit
 import SnapKit
 
+protocol PeopleListViewControllerDelegate: AnyObject {
+    func showDetailsOf(person: Person)
+}
+
 class PeopleListViewController: UIViewController {
     let mainView = PeopleListView()
     let viewModel: PeopleViewModelProtocol
+    weak var delegate: PeopleListViewControllerDelegate?
     
     init(viewModel: PeopleViewModelProtocol = PeopleViewModel()) {
         self.viewModel = viewModel
@@ -27,8 +32,8 @@ class PeopleListViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         viewModel.fetchActivePeople()
     }
     
@@ -46,6 +51,7 @@ class PeopleListViewController: UIViewController {
         //table view
         let tableView = mainView.tableView
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.tableFooterView = UIView()
         tableView.register(PersonTableViewCell.self, forCellReuseIdentifier: PersonTableViewCell.reuseIdentifier)
         tableView.rowHeight = UITableView.automaticDimension
@@ -99,5 +105,9 @@ extension PeopleListViewController: UITableViewDataSource {
 //MARK: Delegate
 
 extension PeopleListViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let person = viewModel.activePeople[indexPath.row]
+        delegate?.showDetailsOf(person: person)
+    }
 }

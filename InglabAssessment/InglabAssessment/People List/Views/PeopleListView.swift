@@ -21,7 +21,18 @@ class PeopleListView: UIView {
     
     private var searchTextChangeHandler: ((String) -> Void)?
     private var retryHandler: (() -> Void)?
-
+    
+    init() {
+        super.init(frame: .zero)
+        addSubviews()
+        setUpConstraints()
+        setUpViews()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     func onSearchTextChange(handler: @escaping (String) -> Void) {
         searchTextChangeHandler = handler
     }
@@ -47,17 +58,6 @@ class PeopleListView: UIView {
         UIView.animate(withDuration: 0.3) { [weak self] in
             self?.activityIndicatorView.stopAnimating()
         }
-    }
-    
-    init() {
-        super.init(frame: .zero)
-        addSubviews()
-        setUpConstraints()
-        setUpViews()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     private func addSubviews() {

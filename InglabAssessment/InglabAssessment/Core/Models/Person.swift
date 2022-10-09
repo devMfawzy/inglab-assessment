@@ -11,6 +11,7 @@ struct Person: Decodable {
     let avatar: String
     let name: String
     let phone: String
+    let email: String
     let isActive: Bool
     let index: Int
 }
