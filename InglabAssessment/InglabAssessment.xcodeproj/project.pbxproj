@@ -37,7 +37,19 @@
 		5B07F1BF28F3771200BAC948 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1BE28F3771100BAC948 /* ErrorView.swift */; };
 		5B07F1C328F37A0000BAC948 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1C228F37A0000BAC948 /* PersonDetailsView.swift */; };
 		5B07F1C528F37A7000BAC948 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1C428F37A7000BAC948 /* PersonDetailsViewController.swift */; };
+		5B07F1CD28F3979500BAC948 /* InglabAssessmentLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1CC28F3979500BAC948 /* InglabAssessmentLoginTests.swift */; };
+		5B07F1D428F3ACE500BAC948 /* InglabAssessmentFetchPeopleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F1D328F3ACE500BAC948 /* InglabAssessmentFetchPeopleTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B07F1CE28F3979500BAC948 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B07F14B28F0895E00BAC948 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B07F15228F0895E00BAC948;
+			remoteInfo = InglabAssessment;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5B07F15328F0895E00BAC948 /* InglabAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InglabAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +82,9 @@
 		5B07F1BE28F3771100BAC948 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		5B07F1C228F37A0000BAC948 /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
 		5B07F1C428F37A7000BAC948 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
+		5B07F1CA28F3979500BAC948 /* InglabAssessmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InglabAssessmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B07F1CC28F3979500BAC948 /* InglabAssessmentLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InglabAssessmentLoginTests.swift; sourceTree = "<group>"; };
+		5B07F1D328F3ACE500BAC948 /* InglabAssessmentFetchPeopleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InglabAssessmentFetchPeopleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B07F1C728F3979500BAC948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				5B07F15528F0895E00BAC948 /* InglabAssessment */,
+				5B07F1CB28F3979500BAC948 /* InglabAssessmentTests */,
 				5B07F15428F0895E00BAC948 /* Products */,
 				5B07F17828F0B36800BAC948 /* Frameworks */,
 			);
@@ -99,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				5B07F15328F0895E00BAC948 /* InglabAssessment.app */,
+				5B07F1CA28F3979500BAC948 /* InglabAssessmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -282,6 +306,15 @@
 			path = "Person Details";
 			sourceTree = "<group>";
 		};
+		5B07F1CB28F3979500BAC948 /* InglabAssessmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B07F1CC28F3979500BAC948 /* InglabAssessmentLoginTests.swift */,
+				5B07F1D328F3ACE500BAC948 /* InglabAssessmentFetchPeopleTests.swift */,
+			);
+			path = InglabAssessmentTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,6 +340,24 @@
 			productReference = 5B07F15328F0895E00BAC948 /* InglabAssessment.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5B07F1C928F3979500BAC948 /* InglabAssessmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B07F1D028F3979500BAC948 /* Build configuration list for PBXNativeTarget "InglabAssessmentTests" */;
+			buildPhases = (
+				5B07F1C628F3979500BAC948 /* Sources */,
+				5B07F1C728F3979500BAC948 /* Frameworks */,
+				5B07F1C828F3979500BAC948 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B07F1CF28F3979500BAC948 /* PBXTargetDependency */,
+			);
+			name = InglabAssessmentTests;
+			productName = InglabAssessmentTests;
+			productReference = 5B07F1CA28F3979500BAC948 /* InglabAssessmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -319,6 +370,10 @@
 				TargetAttributes = {
 					5B07F15228F0895E00BAC948 = {
 						CreatedOnToolsVersion = 14.0;
+					};
+					5B07F1C928F3979500BAC948 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 5B07F15228F0895E00BAC948;
 					};
 				};
 			};
@@ -341,6 +396,7 @@
 			projectRoot = "";
 			targets = (
 				5B07F15228F0895E00BAC948 /* InglabAssessment */,
+				5B07F1C928F3979500BAC948 /* InglabAssessmentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -352,6 +408,13 @@
 			files = (
 				5B07F16328F0896100BAC948 /* LaunchScreen.storyboard in Resources */,
 				5B07F16028F0896100BAC948 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B07F1C828F3979500BAC948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +453,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B07F1C628F3979500BAC948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B07F1D428F3ACE500BAC948 /* InglabAssessmentFetchPeopleTests.swift in Sources */,
+				5B07F1CD28F3979500BAC948 /* InglabAssessmentLoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B07F1CF28F3979500BAC948 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B07F15228F0895E00BAC948 /* InglabAssessment */;
+			targetProxy = 5B07F1CE28F3979500BAC948 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5B07F16128F0896100BAC948 /* LaunchScreen.storyboard */ = {
@@ -576,6 +656,44 @@
 			};
 			name = Release;
 		};
+		5B07F1D128F3979500BAC948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7RWFZ45WK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fawzy.InglabAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InglabAssessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InglabAssessment";
+			};
+			name = Debug;
+		};
+		5B07F1D228F3979500BAC948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F7RWFZ45WK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fawzy.InglabAssessmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InglabAssessment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InglabAssessment";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -593,6 +711,15 @@
 			buildConfigurations = (
 				5B07F16828F0896100BAC948 /* Debug */,
 				5B07F16928F0896100BAC948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B07F1D028F3979500BAC948 /* Build configuration list for PBXNativeTarget "InglabAssessmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B07F1D128F3979500BAC948 /* Debug */,
+				5B07F1D228F3979500BAC948 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
